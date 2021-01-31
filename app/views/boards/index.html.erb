@@ -1,0 +1,19 @@
+<div class="topic-index-wrapper">
+  <div class="container">
+    <% @boards.each do |board| %>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="topic-index-single">
+            <h2 class="topic-author">
+            </h2>
+            <%= board.tittle %>
+            <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+            <p class="topic-text">
+              <%= board.deadline %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

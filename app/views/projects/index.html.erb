@@ -1,0 +1,25 @@
+<div class="topic-index-wrapper">
+  <div class="container">
+    <% @projects.each do |project| %>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="topic-index-single">
+            <h2 class="topic-author">
+            </h2>
+            <%= project.title %>
+            <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+            <p class="topic-text">
+              <%= board.staff %>
+            </p>
+            <p class="topic-text">
+              <%= board.term %>
+            </p>
+            <p class="topic-text">
+              <%= board.content %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
